@@ -1,86 +1,106 @@
 
-
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI BRODAVIO — Технології для людства</title>
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="AI BRODAVIO — технологии для людей. Будущее должно быть человечным.">
+<title>AI BRODAVIO — Технологии для людей</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#07111f;color:#eaf6ff;font-family:Arial,sans-serif;line-height:1.6}
-header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #17334a}
-.logo{font-size:22px;font-weight:bold;letter-spacing:3px;color:#59d9ff}
-nav a{color:#b9d9e8;text-decoration:none;margin-left:18px;font-size:14px}
-.hero{text-align:center;padding:90px 20px 75px;background:radial-gradient(ellipse at center,#123c59 0%,#07111f 65%)}
-.orb{width:145px;height:145px;margin:0 auto 30px;border-radius:50%;border:2px solid #54dfff;box-shadow:0 0 25px #16bde9, inset 0 0 30px #168dbb;animation:pulse 3s infinite}
-@keyframes pulse{50%{box-shadow:0 0 55px #16bde9,inset 0 0 45px #168dbb}}
-h1{font-size:clamp(36px,8vw,66px);letter-spacing:5px;margin:10px 0;color:#fff}
-.tag{color:#62dcff;font-size:20px}
-.hero p{max-width:650px;margin:22px auto;color:#c3d9e8}
-section{max-width:950px;margin:auto;padding:55px 22px}
-h2{color:#60dcff;font-size:27px}
-.card{background:#0d2032;border:1px solid #1d4962;border-radius:15px;padding:23px;margin:15px 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.card h3{color:#8be6ff;margin-top:0}
-footer{text-align:center;padding:35px 15px;border-top:1px solid #17334a;color:#8caabb}
-button{background:#16a9d1;color:#04111c;border:0;border-radius:25px;padding:13px 24px;font-weight:bold;font-size:15px}
-a{color:#6cddff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#07111f;color:#eef5ff;line-height:1.6}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #20334b}
+.logo{font-size:23px;font-weight:bold;letter-spacing:2px;color:#65d9ff}
+nav a{color:#b8c9dd;text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:#65d9ff}
+.hero{text-align:center;padding:90px 20px 75px;overflow:hidden}
+.orb{width:145px;height:145px;margin:0 auto 30px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#c9f6ff,#35a9e8 35%,#124b91 65%,#07111f);box-shadow:0 0 45px #168bd988,0 0 100px #168bd944;animation:pulse 4s infinite}
+@keyframes pulse{50%{transform:scale(1.07);box-shadow:0 0 70px #168bd9}}
+h1{font-size:clamp(38px,7vw,65px);letter-spacing:3px}
+.hero p{max-width:650px;margin:18px auto;color:#a9bdd3;font-size:18px}
+.button{display:inline-block;margin:15px 7px;padding:13px 23px;border-radius:30px;background:#168bd9;color:white;text-decoration:none;font-weight:bold}
+.button.secondary{background:transparent;border:1px solid #3b789f}
+section{padding:65px 8%;max-width:1100px;margin:auto}
+h2{font-size:30px;margin-bottom:20px;color:#65d9ff}
+.section-text{color:#b7c7d9;max-width:800px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:25px}
+.card{padding:24px;border:1px solid #243b55;background:#0c1b2d;border-radius:16px}
+.card h3{color:#65d9ff;margin-bottom:10px}
+.card p{color:#aebfd1;font-size:15px}
+.assistant{margin-top:20px;padding:30px;border:1px solid #28618a;border-radius:18px;background:linear-gradient(135deg,#10243b,#091626)}
+.status{color:#65d9ff;font-size:13px;margin-bottom:12px}
+footer{text-align:center;padding:35px 15px;border-top:1px solid #20334b;color:#8499b0}
+@media(max-width:600px){header{padding:18px 5%;flex-direction:column;gap:10px}nav a{margin:0 7px;font-size:12px}.hero{padding-top:65px}section{padding:48px 6%}}
 </style>
 </head>
 <body>
 <header>
 <div class="logo">AI BRODAVIO</div>
-<nav><a href="#about">Проєкт</a><a href="#vision">Бачення</a><a href="#principles">Принципи</a></nav>
+<nav>
+<a href="#about">О проекте</a>
+<a href="#vision">Видение</a>
+<a href="#assistant">Помощник</a>
+</nav>
 </header>
 
+<main>
 <div class="hero">
 <div class="orb"></div>
 <h1>AI BRODAVIO</h1>
-<div class="tag">ТЕХНОЛОГІЇ ДЛЯ ЛЮДСТВА</div>
-<p>Ідея створення інтелектуальних технологій, які допомагають людям, відкривають нові можливості та ставлять людяність на перше місце.</p>
-<a href="#about"><button>ДІЗНАТИСЯ БІЛЬШЕ</button></a>
+<p>Технологии для людей. Будущее должно быть человечным.</p>
+<a class="button" href="#about">Открыть проект</a>
+<a class="button secondary" href="https://youtube.com/@asphaltangel-t9o" target="_blank" rel="noopener">Наш YouTube</a>
 </div>
 
 <section id="about">
-<h2>Про проєкт</h2>
-<div class="card">
-AI BRODAVIO — незалежна технологічна ініціатива. Ми досліджуємо можливості штучного інтелекту, цифрових інструментів та нових ідей для майбутнього.
-<br><br>
-Це початок великого шляху. Проєкт перебуває на стадії концепції та розробки.
-</div>
+<h2>О проекте</h2>
+<p class="section-text">AI BRODAVIO — независимая инициатива, направленная на развитие технологий искусственного интеллекта с человеческими ценностями в центре внимания. Мы верим, что технологии должны помогать людям, расширять возможности и делать мир лучше.</p>
 </section>
 
 <section id="vision">
-<h2>Наше бачення</h2>
-<div class="grid">
-<div class="card"><h3>Штучний інтелект</h3>Дослідження розумних цифрових помічників.</div>
-<div class="card"><h3>Знання</h3>Пошук, аналіз та перевірка інформації.</div>
-<div class="card"><h3>Інновації</h3>Нові технології та сміливі ідеї.</div>
+<h2>Наше видение</h2>
+<div class="cards">
+<div class="card">
+<h3>Человек прежде всего</h3>
+<p>Уважение к жизни, достоинству и свободе каждого человека.</p>
+</div>
+<div class="card">
+<h3>Честность</h3>
+<p>Не обещать невозможного. Признавать ошибки и говорить правду.</p>
+</div>
+<div class="card">
+<h3>Ответственность</h3>
+<p>Развивать технологии безопасно и использовать их во благо.</p>
+</div>
+<div class="card">
+<h3>Мир без войны</h3>
+<p>Война — зло. Будущее должно строиться на уважении и сотрудничестве.</p>
+</div>
 </div>
 </section>
 
-<section id="principles">
-<h2>Наші принципи</h2>
-<div class="card">
-<p>✦ Чесність та відповідальність.</p>
-<p>✦ Технології мають служити людям.</p>
-<p>✦ Повага до життя та людської гідності.</p>
-<p>✦ Війна — це зло. Майбутнє має будуватися миром.</p>
+<section id="assistant">
+<h2>AI-помощник</h2>
+<div class="assistant">
+<div class="status">● КОНЦЕПЦИЯ ИИ-ПОМОЩНИКА</div>
+<h3>Добро пожаловать в AI BRODAVIO</h3>
+<p class="section-text">Персональный интеллектуальный помощник, созданный с идеей объединить технологии, знания и человеческие ценности.</p>
+<p class="section-text" style="margin-top:15px">Следующий этап — подключение реальной ИИ-модели, памяти и диалогового интерфейса.</p>
 </div>
 </section>
 
 <section>
-<h2>Майбутнє починається з ідеї</h2>
-<div class="card">
-AI BRODAVIO — це шлях від задуму до реального технологічного проєкту. Крок за кроком, відкрито та відповідально.
-</div>
+<h2>Наш принцип</h2>
+<p class="section-text">Технологии должны служить человечеству, а не наоборот. Мы строим будущее, в котором развитие искусственного интеллекта идёт рядом с ответственностью, уважением и человечностью.</p>
 </section>
+</main>
 
 <footer>
-<strong>AI BRODAVIO</strong><br>
-Ініціатор проєкту — Roman Brodovij<br>
-Технології для людства · 2026
+<p><strong>AI BRODAVIO</strong></p>
+<p>Технологии для людей.</p>
+<p>© 2026 AI BRODAVIO. Независимый проект.</p>
 </footer>
 </body>
 </html>
